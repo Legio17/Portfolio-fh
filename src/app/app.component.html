@@ -1,14 +1,17 @@
-<app-footer></app-footer>
-<div class="page-navigation">
-  <a
-    *ngFor="let navItem of listOfNav"
-    [routerLink]="navItem.link"
-    routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: navItem.exact }"
-    >{{ navItem.name }}</a
-  >
+<div class="body">
+  <app-header></app-header>
+
+  <div class="page-navigation">
+    <a
+      *ngFor="let navItem of listOfNav"
+      [routerLink]="navItem.link"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: navItem.exact }"
+      >{{ navItem.name }}</a
+    >
+  </div>
+  <main class="container-md">
+    <router-outlet></router-outlet>
+  </main>
+  <app-footer></app-footer>
 </div>
-<main class="container-md">
-  <router-outlet></router-outlet>
-</main>
-<app-header></app-header>

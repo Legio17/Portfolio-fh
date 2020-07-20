@@ -5,6 +5,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'projects', component: SkillsComponent, pathMatch: 'full' },
   { path: 'skills', component: SkillsComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '' },
 ];

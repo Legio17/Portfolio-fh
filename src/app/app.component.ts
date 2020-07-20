@@ -17,7 +17,12 @@ export class AppComponent {
   listOfNav: PageNavigation[] = [
     {
       link: '/',
-      name: 'Home',
+      name: 'About',
+      exact: true,
+    },
+    {
+      link: '/projects',
+      name: 'Projects',
       exact: true,
     },
     {
