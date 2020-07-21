@@ -4,11 +4,14 @@ footer {
   background: #000000;
   padding: 20px;
   height: 20px;
+  width: 100%;
+  clear: both;
+  position: relative;
 
   .footer-text {
     color: white;
     font-style: bold;
     text-align: left;
-    font-size: 20px;
+    font-size: 10px;
   }
 }
